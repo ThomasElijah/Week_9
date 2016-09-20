@@ -61,16 +61,3 @@ class Taxi(Car):
         self.current_fare_distance += distance_driven
         return distance_driven
 
-def main():
-
-    prius_1 = Taxi("Prius 1", 100)
-    prius_1.drive(40)
-    print(prius_1.__str__())
-    print("Current fare is ${:.2f}".format(prius_1.get_fare()))
-    prius_1.start_fare()
-    prius_1.drive(100)
-    print(prius_1.__str__())
-    print("Current fare is ${:.2f}".format(prius_1.get_fare()))
-
-if __name__ == "__main__":
-    main()
